@@ -147,9 +147,12 @@ async function foo(){
     }else if(typevalue!="NA"){
        
         getList(typevalue);
+    }else{
+        divrow.innerHTML=`<span style="color:white; text-align:center">Please Enter Valid Meal Name</span><br><br>`;
     }
     }catch{
-        divrow.innerHTML=`<span>404 Page Not found try again</span><br><br>`;
+        divrow.innerHTML=`<span style="color:white; text-align:center">Please Enter Valid Meal Name</span><br><br>`;
+        divrow.innerHTML+=`<span style="color:white; text-align:center">404 Page Not found try again</span><br><br>`;
       
     }
 }
