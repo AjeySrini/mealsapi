@@ -227,7 +227,7 @@ async function getList(data) {
   <img src="${categories[i].strMealThumb}" class="card-img-top" alt="...">
   <div class="card-body">
     <h3 class="card-title">${categories[i].strMeal}</h3>
-    <p class="card-text">${categories[i].idMeal}</p>
+    <p class="card-text">Meal ID:${categories[i].idMeal}</p>
     <button class="btn btn-primary" onclick="getMealByid('${categories[i].idMeal}')">Get Recepies</button>
   </div>
 </div>`;
